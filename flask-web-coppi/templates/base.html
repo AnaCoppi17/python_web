@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title><!-- bloco de título --> {% block head_title %}{% endblock %}</title>
+		<!-- bloco de CSS -->
+		{% block css %} {% endblock %}
+	</head>
+	<body>
+		<!-- bloco de cabeçalho -->
+		{% block header %} {% endblock %}
+		<!-- bloco principal do body -->
+		{% block main %}
+		<!-- bloco de conteúdo -->
+		{% block content %} {% endblock %} {% endblock %}
+		<!-- bloco de rodapé -->
+		{% block footer %} {% endblock %}
+		<!-- bloco extra abaixo do body -->
+		{% block javascript %} {% endblock %}
+	</body>
+</html>
